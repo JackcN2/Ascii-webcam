@@ -19,9 +19,9 @@ SpeechRecognition
 
 pyttsx3
 
-These can be installed by running script included with the program, or downloaded manually. 
+These can be installed by running the command script included with the program, or downloaded manually. 
 
-Make sure that the two scripts stay in the same directory as they both need to refrence one of the same files for operation. 
+Make sure that the two python scripts stay in the same directory as they both need to refrence one of the same files for operation. 
 
 # Running the program
 
