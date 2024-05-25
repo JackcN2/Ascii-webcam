@@ -50,7 +50,7 @@ If you are  running on windows, you can speak into the microphone and it will di
 
 # Limitations
 
-The install script will not function unless you chmod its  permissions to make it be executable
+On linux install script will not function unless you chmod its  permissions to make it be executable
 
 Due to the nature of the programs netcode, additional steps by each user is required if  you  want to connect two computers not on the same network.
 
