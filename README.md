@@ -28,6 +28,8 @@ Make sure that the two python scripts stay in the same directory as they both ne
 
 # Running the program
 
+See  #Limitations if both computers are not on the  same network
+
 To run the program, have both users run their server and client scripts at the same time.
 
 Each users ip address will be  displayed on their client, and should be input on the oposite server.
@@ -41,10 +43,11 @@ After that, both users can press enter on their client, and the program will sta
 
 Your own camera feed is displayed under the window titled "Your camera:" and the other users camera feed is displayed under the window titled "Their camera:"
 
-If  you are both running on windows, you can speak into the microphone and it will display what you said above your video feed.
+If you are  running on windows, you can speak into the microphone and it will display what you said above your video feed.
 
 
 # Limitations
 
+T
 
 
