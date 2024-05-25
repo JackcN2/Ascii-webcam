@@ -5,7 +5,7 @@ This program functions as a  (non-practical) video confrencing program with a un
 
 The program requires python 3.12 as well as the following pip packages
 
-numpy
+Numpy
 
 Pillow
 
@@ -19,7 +19,13 @@ These can be installed by running script included with the program, or downloade
 
 Make sure that the two scripts stay in the same directory as they both need to refrence one of the same files for operation. 
 
+To run the program, have both users run their server and client scripts at the same time.
 
+Each users ip address will be  displayed on their client, and should be input on the oposite server.
+
+Then decide who is user one and who is user two, the user number does not affect operation but the program will not function if both users select the same number.
+
+After that, both users can press enter on their client, and the program will start.
 
 
 
