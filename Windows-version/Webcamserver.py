@@ -13,6 +13,8 @@ import threading
 import socket
 import threading
 
+#Function to ask wich user is wich
+#Comes  with error catching so the program does not crash from a user typo
 def person():
     personNum = int(input("are you person 1 or 2"))
     if personNum in range(1, 3):
@@ -24,25 +26,22 @@ def person():
         
         
 
-#start the speech recognizer 
+#start the speech recognizer library
 r = sr.Recognizer()
+
 #setting up variables for the file and speech text
 file_path = 'out.txt'
 recognized_text = ""
 
 
 
-print("make sure to keep both scripts in the same directory as they must acess the same file for variables")
-print()
-print("The other clients ip will be displayed on their screen.")
-print()
-print("Both of you must open your server first then  client, enter the others ip and pick who is 1 and who is 2")
-print()
-print("Then press enter on your client to start")
-print()
+print("Check readme before first use")
 
-host = input("enter the other persons ip")  # Change this to the host you want to send to
+# Get the oposite client ip
+host = input("enter the other persons ip")  
 
+
+#Call the person number function and set our port to the one specified by the person number
 with open("runtimevariables.txt", "w") as file:
     
     if person() == 2:
@@ -53,17 +52,19 @@ with open("runtimevariables.txt", "w") as file:
         port = 12345
 
     
- # Change this to the port you want to use
+# Change this to the port you want to use
 
-#variables for the ascii converter
+#variables for the ascii converter to function
 gscale1 = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. "
 gscale2 = '@%#*+=-:. '
 
-
-#file sender function
+#Main netcode
 def send_file_over_socket(file_path, host, port):
+    #bind to the previously selected values
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        #connect to client
         s.connect((host, port))
+        #send the whole file
         with open(file_path, 'rb') as file:
             data = file.read()
             s.sendall(data)
@@ -103,6 +104,7 @@ def convert_speech_to_text():
             print("Error:", e)
 
 #start the thread to run the speech recognition in a separate process
+#This has to happen so the speech recognizer does not slow down the image processor
 def start_speech_recognition():
     threading.Thread(target=convert_speech_to_text, daemon=True).start()
 
@@ -226,7 +228,7 @@ def covertImageToAscii(fileName, cols, scale, moreLevels):
 	# return txt image
 	return aimg
 
-# main() function
+#Call the image processors and get an output
 def asciiCon():
 	
 	
