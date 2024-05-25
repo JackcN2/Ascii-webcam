@@ -5,6 +5,9 @@ This program functions as a  (non-practical) video confrencing program with a un
 
 
 
+Make sure that the two scripts stay in the same directory as they both need to refrence one of the same files for operation. 
+
+
 
 
 
