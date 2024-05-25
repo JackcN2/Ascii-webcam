@@ -4,10 +4,15 @@ This program functions as a  (non-practical) video confrencing program with a un
 
 
 The program requires python 3.12 as well as the following pip packages
+
 numpy
+
 Pillow
+
 opencv-python
+
 SpeechRecognition
+
 pyttsx3
 
 These can be installed by running script included with the program, or downloaded manually. 
