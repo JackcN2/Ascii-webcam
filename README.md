@@ -7,7 +7,7 @@ There is both a windows and linux version avalible.  They  are cross-platform, b
 
 # Setup
 
-The program requires python 3.12 as well as the following pip packages
+The program requires python 3.12 (or 3.11) as well as the following pip packages
 
 Numpy
 
