@@ -40,7 +40,7 @@ After that, both users can press enter on their client, and the program will sta
 
 Your own camera feed is displayed under the window titled "Your camera:" and the other users camera feed is displayed under the window titled "Their camera:"
 
-If  you are both running on windows, you can speak into the microphone and it will display above your video feed.
+If  you are both running on windows, you can speak into the microphone and it will display what you said above your video feed.
 
 
 
