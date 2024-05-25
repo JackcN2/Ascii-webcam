@@ -19,6 +19,8 @@ pyttsx3
 
 These can be installed by running script included with the program, or downloaded manually. 
 
+# Running the program
+
 Make sure that the two scripts stay in the same directory as they both need to refrence one of the same files for operation. 
 
 To run the program, have both users run their server and client scripts at the same time.
