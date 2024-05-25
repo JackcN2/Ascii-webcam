@@ -25,6 +25,7 @@ Make sure that the two python scripts stay in the same directory as they both ne
 
 # Running the program
 
+![frame](https://github.com/JackcN2/Ascii-webcam/assets/167788672/2f00e8f3-fdc3-494f-9f0c-8acd93640a89)
 
 
 To run the program, have both users run their server and client scripts at the same time.
