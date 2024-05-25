@@ -21,10 +21,12 @@ pyttsx3
 
 These can be installed by running the command script included with the program, or downloaded manually. 
 
+Download the zip from github, unzip it and open the file  for the operating  system you are currently on.
+Alternativly you can download the project by cloning  'https://github.com/JackcN2/Ascii-webcam.git'
+
 Make sure that the two python scripts stay in the same directory as they both need to refrence one of the same files for operation. 
 
 # Running the program
-
 
 To run the program, have both users run their server and client scripts at the same time.
 
@@ -41,6 +43,8 @@ Your own camera feed is displayed under the window titled "Your camera:" and the
 
 If  you are both running on windows, you can speak into the microphone and it will display what you said above your video feed.
 
+
+# Limitations
 
 
 
