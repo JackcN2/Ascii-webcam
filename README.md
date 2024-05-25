@@ -19,6 +19,8 @@ SpeechRecognition
 
 pyttsx3
 
+requests
+
 These can be installed by running the command script included with the program, or downloaded manually. 
 
 Download the zip from github, unzip it and open the file  for the operating  system you are currently on.
