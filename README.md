@@ -23,7 +23,7 @@ These can be installed by running script included with the program, or downloade
 
 Make sure that the two scripts stay in the same directory as they both need to refrence one of the same files for operation. 
 
-# Running the program
+#Running the program
 
 
 
