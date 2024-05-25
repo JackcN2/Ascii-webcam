@@ -5,6 +5,8 @@ This program functions as a  (non-practical) video confrencing program with a un
 
 There is both a windows and linux version avalible.  They  are cross-platform, but the linux version does not suppourt speech detection 
 
+#Setup
+
 The program requires python 3.12 as well as the following pip packages
 
 Numpy
@@ -19,9 +21,11 @@ pyttsx3
 
 These can be installed by running script included with the program, or downloaded manually. 
 
+Make sure that the two scripts stay in the same directory as they both need to refrence one of the same files for operation. 
+
 # Running the program
 
-Make sure that the two scripts stay in the same directory as they both need to refrence one of the same files for operation. 
+
 
 To run the program, have both users run their server and client scripts at the same time.
 
