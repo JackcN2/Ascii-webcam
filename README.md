@@ -5,7 +5,7 @@ This program functions as a  (non-practical) video confrencing program with a un
 
 There is both a windows and linux version avalible.  They  are cross-platform, but the linux version does not suppourt speech detection 
 
-#Setup
+# Setup
 
 The program requires python 3.12 as well as the following pip packages
 
