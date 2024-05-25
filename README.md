@@ -50,6 +50,8 @@ If you are  running on windows, you can speak into the microphone and it will di
 
 # Limitations
 
+The install script will not function unless you chmod its  permissions to make it be executable
+
 Due to the nature of the programs netcode, additional steps by each user is required if  you  want to connect two computers not on the same network.
 
 For the sockets to be pointed to the right address, both users must forward TCP ports 12345 and  12344 to their computers. A  guide for general port forwarding is avalible  here: https://www.noip.com/support/knowledgebase/general-port-forwarding-guide
