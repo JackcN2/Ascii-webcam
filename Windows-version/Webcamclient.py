@@ -5,7 +5,7 @@ import os
 import ctypes
 import sys, random, argparse
 from requests import get
-
+from win32api import GetSystemMetrics
 #Get current internal ip adress to show the other user
 hostname = socket.gethostname()
 internal_ip=socket.gethostbyname(hostname)
@@ -56,7 +56,24 @@ def set_cmd_window_size(width, height):
     rect = SMALL_RECT(0, 0, width - 1, height - 1)
     ctypes.windll.kernel32.SetConsoleWindowInfo(h_out, True, ctypes.byref(rect))
 
+def screensizer():
+    #get the screen resolution
+    width = GetSystemMetrics(0)
+    height = GetSystemMetrics(1)
 
+
+
+    # Scaling factors
+    width_scale_factor = 170 / 1920
+    height_scale_factor = 60 / 1080
+
+    #scale res
+    scaled_width = width * width_scale_factor
+    scaled_height = height * height_scale_factor
+    scaled_height = round(scaled_height)
+    scaled_width = round(scaled_width)
+    #set res
+    set_cmd_window_size(scaled_width, scaled_height)
 
 #The main  netcode for reciving the image    
 def receive_file_over_socket(filename, port):
@@ -98,7 +115,7 @@ input("Ready?")
 
 
 #Call the window sizer at the correct  amount of cols and rows                
-set_cmd_window_size(170, 60)
+screensizer()
 #Set the terminal name to tell users wich camera is  theirs and wich camera  isint
 ctypes.windll.kernel32.SetConsoleTitleW('Their camera:')
 

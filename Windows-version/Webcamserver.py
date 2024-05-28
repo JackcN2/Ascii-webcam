@@ -12,7 +12,7 @@ import pyttsx3
 import threading
 import socket
 import threading
-
+from win32api import GetSystemMetrics
 #Function to ask wich user is wich
 #Comes  with error catching so the program does not crash from a user typo
 def person():
@@ -130,7 +130,24 @@ def set_cmd_window_size(width, height):
     # Create SMALL_RECT instance for window size
     rect = SMALL_RECT(0, 0, width - 1, height - 1)
     ctypes.windll.kernel32.SetConsoleWindowInfo(h_out, True, ctypes.byref(rect))
+def screensizer():
+    #get the screen resolution
+    width = GetSystemMetrics(0)
+    height = GetSystemMetrics(1)
 
+
+
+    # Scaling factors
+    width_scale_factor = 170 / 1920
+    height_scale_factor = 60 / 1080
+
+    #scale res
+    scaled_width = width * width_scale_factor
+    scaled_height = height * height_scale_factor
+    scaled_height = round(scaled_height)
+    scaled_width = round(scaled_width)
+    #set res
+    set_cmd_window_size(scaled_width, scaled_height)
 #use this to clear screen after display
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
@@ -312,7 +329,8 @@ cap = cv2.VideoCapture(0)
 # Set the frame width and height, window size, and the speech recognizer
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 540)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 360)
-set_cmd_window_size(170, 60)
+screensizer()
+
 ctypes.windll.kernel32.SetConsoleTitleW('Your camera:')
 start_speech_recognition()
 
