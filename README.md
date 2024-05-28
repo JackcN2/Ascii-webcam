@@ -50,6 +50,8 @@ If you are  running on windows, you can speak into the microphone and it will di
 
 # Limitations
 
+On irregular screen resolutions you may need to run the displays in fullscreen due to issues with  that way text is displayed quickly
+
 On linux install script will not function unless you chmod its  permissions to make it be executable
 
 Due to the nature of the programs netcode, additional steps by each user is required if  you  want to connect two computers not on the same network.
