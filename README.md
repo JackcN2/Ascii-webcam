@@ -28,7 +28,8 @@ Download the zip from github, unzip it and open the file  for the operating  sys
 Alternativly you can download the project by cloning  'https://github.com/JackcN2/Ascii-webcam.git'
 
 Make sure that the two python scripts stay in the same directory as they both need to refrence one of the same files for operation. 
-![image](https://github.com/JackcN2/Ascii-webcam/assets/167788672/16615b94-7743-497c-86ed-a15753d6f3d1)
+![image](https://github.com/JackcN2/Ascii-webcam/assets/167788672/1bc299ee-e1e9-464a-a654-eb48c6e66ab0)
+
 
 
 
