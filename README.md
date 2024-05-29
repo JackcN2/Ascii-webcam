@@ -63,4 +63,5 @@ Due to the nature of the programs netcode, additional steps by each user is requ
 For the sockets to be pointed to the right address, both users must forward TCP ports 12345 and  12344 to their computers. A  guide for general port forwarding is avalible  here: https://www.noip.com/support/knowledgebase/general-port-forwarding-guide
 
 Once this is completed you can enter the other users external ip instead of their internal one and it should work as normal. 
+![image](https://github.com/JackcN2/Ascii-webcam/assets/167788672/15d102ef-fe84-4583-be07-68842f43b4b4)
 
