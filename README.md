@@ -45,7 +45,8 @@ Each users ip address will be  displayed on their client, and should be input on
 Then decide who is user one and who is user two, the user number does not affect operation but the program will not function if both users select the same number.
 
 After that, both users can press enter on their client, and the program will start.
-![image](https://github.com/JackcN2/Ascii-webcam/assets/167788672/9fbaecbb-907f-42ff-b100-ddf8d34afe95)
+![image](https://github.com/JackcN2/Ascii-webcam/assets/167788672/3b2c074a-b109-486b-a14c-e50cd30d75c3)
+
 
 # Using the Program
 
