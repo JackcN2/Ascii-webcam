@@ -50,6 +50,7 @@ Your own camera feed is displayed under the window titled "Your camera:" and the
 
 If you are  running on windows, you can speak into the microphone and it will display what you said above your video feed.
 
+![image](https://github.com/JackcN2/Ascii-webcam/assets/167788672/a6b078d8-7a84-4501-865e-e7644d2f4116)
 
 # Limitations
 
