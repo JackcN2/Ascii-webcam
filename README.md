@@ -4,6 +4,7 @@ This program functions as a  (non-practical) video confrencing program with a un
 
 
 There is both a windows and linux version avalible.  They  are cross-platform, but the linux version does not suppourt speech detection 
+![image](https://github.com/JackcN2/Ascii-webcam/assets/167788672/a581b387-ff32-40ba-a76e-f37fe84a5d9f)
 
 # Setup
 
